@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(https://source.unsplash.com/random/1600x900/?landscape);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;    
+}
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 2em;
+    width: 100%;
+    max-width: 420px; 
+    margin: 2em;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button{
+    margin: 1em;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+    padding: 0.6em;
+    background-color: dimgray;
+    color: white;
+    flex-shrink: 1;
+}
+
+.search button:hover{
+    transform: scale(1.2);
+    background-color: darkgrey;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search input[type=text]{
+    margin: 1em;
+    width: 80%;
+    outline: none;
+    border-radius:20px;
+    border: none;
+    padding: 0.8em;
+    background-color: dimgray;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    flex-shrink: 1.5;
+}
+
+.city{
+    margin: 0.5em;
+}
+
+.temp{
+    margin: 0.5em;
+}
+.imgdes{
+    display: flex;
+    margin: 0.5em;
+}
+
+.description{
+    align-self: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+.humidity{
+    margin: 0.5em;
+}
+
+.wind{
+    margin: 0.5em;
+}
+
+@media (max-width:380px){
+    .body{
+        margin: 0;
+        padding: 0;
+    }
+    .card{
+        margin: 1em;
+        padding: 1em;
+    }    
+    /* .search button{
+        padding: 0.3em;
+        margin: 0.5em;
+    }
+    .search input[type=text]{
+        padding: 0.4em;
+        margin: 0.5em;
+    } */
+}
